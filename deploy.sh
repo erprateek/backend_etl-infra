@@ -17,4 +17,5 @@ echo "Applying Terraform plan..."
 terraform apply tfplan
 
 echo "Deployment complete."
-
+echo "Generating outputs"
+terraform output -json > outputs.json
