@@ -7,10 +7,18 @@ resource "random_pet" "bucket_name" {}
 
 resource "aws_s3_bucket" "etl_bucket" {
   bucket = "${var.s3_bucket_prefix}-${random_pet.bucket_name.id}"
-
   force_destroy = true
+}
 
-  # Block all public access
+# Set the ACL for the S3 bucket to private using the aws_s3_bucket_acl resource
+resource "aws_s3_bucket_acl" "etl_bucket_acl" {
+  bucket = aws_s3_bucket.etl_bucket.id
+  acl    = "private"
+}
+
+resource "aws_s3_bucket_public_access_block" "etl_bucket_block" {
+  bucket = aws_s3_bucket.etl_bucket.id
+
   block_public_acls       = true
   block_public_policy     = true
   ignore_public_acls      = true
