@@ -10,12 +10,6 @@ resource "aws_s3_bucket" "etl_bucket" {
   force_destroy = true
 }
 
-# Set the ACL for the S3 bucket to private using the aws_s3_bucket_acl resource
-resource "aws_s3_bucket_acl" "etl_bucket_acl" {
-  bucket = aws_s3_bucket.etl_bucket.id
-  acl    = "private"
-}
-
 resource "aws_s3_bucket_public_access_block" "etl_bucket_block" {
   bucket = aws_s3_bucket.etl_bucket.id
 
