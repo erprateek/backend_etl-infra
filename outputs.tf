@@ -13,3 +13,15 @@ output "service_account_role_arn" {
 output "db_admin_role_arn" {
   value = aws_iam_role.db_admin.arn
 }
+
+output "ec2_public_ip" {
+  value = aws_instance.etl_instance.public_ip
+}
+
+output "ec2_private_ip" {
+  value = aws_instance.etl_instance.private_ip
+}
+
+output "ec2_instance_id" {
+  value = aws_instance.etl_instance.id
+}
