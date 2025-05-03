@@ -1,6 +1,9 @@
 # backend_etl-infra
 
 [![tfsec](https://github.com/erprateek/backend_etl-infra/actions/workflows/tfsec.yml/badge.svg)](https://github.com/erprateek/backend_etl-infra/actions/workflows/tfsec.yml)
+[![ShellCheck](https://github.com/erprateek/backend_etl-infra/actions/workflows/main.yml/badge.svg)](https://github.com/erprateek/backend_etl-infra/actions/workflows/main.yml)
+[![CI](https://github.com/erprateek/backend_etl-infra/actions/workflows/blank.yml/badge.svg)](https://github.com/erprateek/backend_etl-infra/actions/workflows/blank.yml)
+[![Bandit](https://github.com/erprateek/backend_etl-infra/actions/workflows/bandit.yml/badge.svg)](https://github.com/erprateek/backend_etl-infra/actions/workflows/bandit.yml)
 Infrastructure-as-Code (IaC) repository for provisioning and managing backend infrastructure to support ETL pipelines, using Terraform and supporting shell scripts.
 
 ## 📦 Repository Structure
