@@ -1,0 +1,12 @@
+name: ShellCheck
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: ShellCheck
+      uses: ludeeus/action-shellcheck@2.0.0
+      with:
+        scandir: "setup/"
