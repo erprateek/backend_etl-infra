@@ -1,6 +1,6 @@
 # backend_etl-infra
 
-![Terraform security parameter](https://github.com/github/docs/actions/workflows/tfsec.yml/badge.svg)
+![Terraform security parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 Infrastructure-as-Code (IaC) repository for provisioning and managing backend infrastructure to support ETL pipelines, using Terraform and supporting shell scripts.
 
 ## 📦 Repository Structure
